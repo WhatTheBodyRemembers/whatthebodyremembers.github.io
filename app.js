@@ -35,7 +35,12 @@ $('#main').innerHTML=routeList.filter(id=>!D.photographs.some(p=>p.id===id)).map
 const archive=document.createElement('section');archive.id='all-photographs';archive.hidden=true;archive.tabIndex=-1;archive.setAttribute('aria-label','All photographs');archive.innerHTML=`<div class="archive-heading"><span class="eyebrow">The complete sequence</span><h2>All photographs</h2><p>Scroll between photographs. Each image has its own caption and artist statement.</p><a href="#photographs" data-close-archive>← Return to contact sheet</a></div>${D.photographs.map(p=>renderSection(p.id)).join('')}<div class="archive-heading"><a href="#photographs" data-close-archive>← Return to contact sheet</a></div>`;
 $('#photographs').after(archive);
 // Podcasts use the reference's text-left, player-right composition in reading order.
-document.querySelectorAll('.podcast').forEach(el=>el.prepend(el.lastElementChild));
+document.querySelectorAll('.podcast').forEach(el=>{
+ el.prepend(el.lastElementChild);
+ // Keep the statement and credits directly beneath the listening experience.
+ const statement=el.querySelector('.statement');
+ if(statement)el.querySelector('.media-slot').after(statement);
+});
 
 // Keep native document scrolling and anchor history; never rebuild works on navigation.
 function followHash(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(D.themes.some(t=>t.id===id))id='introduction';if(id==='all-photographs'||D.photographs.some(p=>p.id===id))archive.hidden=false;const target=document.getElementById(id);if(!target)return;target.scrollIntoView({behavior:'instant',block:'start'});target.focus({preventScroll:true});const w=items.find(w=>w.id===id);document.title=w?`${w.title} — What the Body Remembers`:`${D.title} — Digital exhibition`;}
