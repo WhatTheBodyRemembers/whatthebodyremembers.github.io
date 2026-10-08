@@ -64,3 +64,5 @@ window.EXHIBITION.introduction=["Students in CHLA 215 \"Introduction to the Medi
 window.EXHIBITION.openingImages=[{"src": "opening-reconstruction-01.JPG", "alt": "Grayscale medical reconstruction showing the surface of a hand and forearm against black.", "caption": "[Caption to be supplied]", "credit": "[Attribution to be supplied]", "statement": "[Contextual statement to be supplied]"}, {"src": "opening-reconstruction-02.JPG", "alt": "Grayscale medical reconstruction showing bones of a hand and forearm against black.", "caption": "[Caption to be supplied]", "credit": "[Attribution to be supplied]", "statement": "[Contextual statement to be supplied]"}];
 
 if(!window.EXHIBITION.themes.some(t=>t.id==='war'))window.EXHIBITION.themes.push({id:'war',title:'War'});
+
+window.EXHIBITION.openingImages=[{src:"opening-composite.png",alt:"Two grayscale medical reconstructions arranged vertically within a white border: the surface of a hand and forearm above a view of its bones.",caption:"[Caption to be supplied]",credit:"[Attribution to be supplied]",statement:"[Contextual statement to be supplied]"}];
