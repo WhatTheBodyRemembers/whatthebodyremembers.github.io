@@ -66,3 +66,5 @@ window.EXHIBITION.openingImages=[{"src": "opening-reconstruction-01.JPG", "alt":
 if(!window.EXHIBITION.themes.some(t=>t.id==='war'))window.EXHIBITION.themes.push({id:'war',title:'War'});
 
 window.EXHIBITION.openingImages=[{src:"opening-composite.png",alt:"Two grayscale medical reconstructions arranged vertically within a white border: the surface of a hand and forearm above a view of its bones.",caption:"[Caption to be supplied]",credit:"[Attribution to be supplied]",statement:"[Contextual statement to be supplied]"}];
+
+Object.assign(window.EXHIBITION.openingImages[0],{src:"opening-composite-v2.png",alt:"Two grayscale medical reconstructions arranged vertically on black: the surface of a hand and forearm above a view of its bones."});
