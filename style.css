@@ -33,3 +33,18 @@ html{scroll-padding-top:0}
 .playback-time{font-size:15px!important;font-variant-numeric:tabular-nums;margin:12px 0 0;color:var(--ink)}
 
 .scroll-section.opening .hero-heading{grid-column:1/-1;padding:20px 0 35px}.opening-diptych{grid-column:1/-1;padding:0 0 55px!important;width:100%}.diptych-images{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}.diptych-images figure{margin:0;min-width:0}.hero-image .diptych-images img{width:100%;height:auto;object-fit:contain;display:block;background:#000}.opening-note{margin:0 0 18px;color:#d2d0c5}.diptych-images figcaption{line-height:1.6}@media(max-width:760px){.diptych-images{grid-template-columns:1fr;gap:30px}.opening-diptych{padding-bottom:35px!important}}
+/* Editorial opening: title beside two intact, staggered medical images. */
+.scroll-section.opening{grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);gap:0 5%;padding-top:55px}
+.scroll-section.opening .hero-heading{grid-column:auto;padding:15px 0 70px;align-self:center}
+.opening-diptych{grid-column:auto;padding:10px 0 45px!important}
+.diptych-images{grid-template-columns:1fr;gap:28px}
+.diptych-images figure:first-child{width:88%;justify-self:start}
+.diptych-images figure:last-child{width:88%;justify-self:end}
+.hero-image .diptych-images img{border:1px solid #3a3d38}
+.diptych-images figcaption{font-size:11px;margin-top:9px}
+.diptych-images details{margin-top:5px;font-size:12px}
+.opening-note{font-size:11px!important;line-height:1.6;max-width:44ch}
+.theme-thread{display:flex;flex-wrap:wrap;align-items:center;gap:12px 0;line-height:1.7}
+.theme-thread span{display:inline-flex;align-items:center;white-space:nowrap}
+.theme-thread span:not(:last-child)::after{content:'·';margin:0 15px;color:var(--wine)}
+@media(max-width:760px){.scroll-section.opening{padding-top:28px;gap:0}.scroll-section.opening .hero-heading{padding:10px 0 28px}.opening-diptych{width:100%;padding:0 0 30px!important}.diptych-images{gap:26px}.diptych-images figure:first-child,.diptych-images figure:last-child{width:94%}.theme-thread span:not(:last-child)::after{margin:0 10px}}
