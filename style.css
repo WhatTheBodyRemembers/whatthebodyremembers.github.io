@@ -54,3 +54,29 @@ html{scroll-padding-top:0}
 
 /* Compact opening image balanced against the exhibition title. */
 .opening-diptych{width:100%;max-width:310px;padding-bottom:35px!important}.diptych-images figure:first-child{max-width:310px}.scroll-section.opening{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.scroll-section.opening .hero-heading{padding:20px 0 35px;align-self:center}@media(max-width:760px){.opening-diptych{max-width:270px;align-self:center}.diptych-images figure:first-child{max-width:270px}.scroll-section.opening .hero-heading{align-self:stretch}}
+
+/* A quiet, balanced museum opening. The supplied image remains uncropped. */
+.scroll-section.opening{background:#000;grid-template-columns:minmax(0,520px) minmax(0,310px);justify-content:center;column-gap:clamp(40px,6vw,90px);padding:64px 7% 0}
+.scroll-section.opening .hero-heading{padding:0 0 58px;align-self:center}
+.hero-heading h1{font-size:clamp(48px,5.3vw,76px);line-height:1.04;letter-spacing:-.035em;margin-bottom:28px}
+.hero-heading .subtitle{font-size:clamp(20px,2vw,26px);max-width:390px;line-height:1.4;color:#d6d1c8}
+.hero-heading .eyebrow{margin-bottom:28px;color:#d5b4bd}
+.hero-explore{display:inline-flex;align-items:center;gap:28px;min-height:48px;margin-top:30px;padding:10px 0;border-bottom:1px solid #a99b94;text-decoration:none;font-size:14px;color:#f7f5ef}
+.hero-explore:hover{color:#e3b7c5;border-color:#e3b7c5}.hero-explore:focus-visible{outline-color:#e3b7c5}
+.opening-diptych{max-width:310px;padding:0 0 48px!important;align-self:center}
+.diptych-images figure:first-child{max-width:310px;margin:0}
+.opening-note{font-size:12px;line-height:1.5;margin:0 0 14px;color:#bcb9b1}
+.hero-image figcaption{font-size:12px;margin-top:12px;color:#bcb9b1}
+.hero-image details{margin-top:8px}.hero-image summary{min-height:44px}
+.exhibition-entry{margin:0 0 -35px;padding:25px 30px;grid-template-columns:1.4fr 1fr;gap:25px}
+@media(max-width:760px){
+ .scroll-section.opening{padding:36px 7% 0;gap:0}
+ .scroll-section.opening .hero-heading{padding:0 0 38px;align-self:stretch}
+ .hero-heading h1{font-size:clamp(43px,10.8vw,64px);margin-bottom:23px}
+ .hero-heading .eyebrow{margin-bottom:22px}
+ .hero-heading .subtitle{font-size:22px;max-width:340px}
+ .hero-explore{margin-top:20px}
+ .opening-diptych{width:100%;max-width:280px;align-self:center;padding-bottom:30px!important}
+ .diptych-images figure:first-child{width:100%;max-width:280px}
+ .exhibition-entry{margin:0 0 -30px;padding:23px;width:100%}
+}
