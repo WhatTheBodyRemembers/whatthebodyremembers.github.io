@@ -81,3 +81,6 @@ window.EXHIBITION.photographs=[{"id": "photograph-01", "type": "photograph", "ti
 
 // Swap preview positions while preserving each photograph’s permanent link.
 {const photos=window.EXHIBITION.photographs;[photos[9],photos[12]]=[photos[12],photos[9]];}
+
+// Requested editorial order: waterfront first, second/third exchanged, portrait central.
+{const photos=window.EXHIBITION.photographs;const order=['photograph-12','photograph-03','photograph-02','photograph-01','photograph-04','photograph-08','photograph-05','photograph-06','photograph-07','photograph-13','photograph-09','photograph-11','photograph-10'];window.EXHIBITION.photographs=order.map(id=>photos.find(p=>p.id===id));}
