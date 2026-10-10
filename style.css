@@ -80,3 +80,12 @@ html{scroll-padding-top:0}
  .diptych-images figure:first-child{width:100%;max-width:280px}
  .exhibition-entry{margin:0 0 -30px;padding:23px;width:100%}
 }
+
+/* Curatorial essay: title above text, preserving the document's emphasis. */
+#introduction{display:block;padding:100px max(7%,calc((100vw - 900px)/2)) 90px}
+#introduction .leaf:first-child{margin-bottom:38px}
+#introduction .question{max-width:800px;font-size:clamp(40px,4.6vw,66px)}
+#introduction .leaf:last-child{max-width:760px}
+#introduction .leaf:last-child>.eyebrow{font:28px/1.3 Georgia,serif;text-transform:none;letter-spacing:0;color:var(--ink);margin-bottom:28px}
+#introduction p{max-width:none;margin-bottom:1.65em}
+@media(max-width:760px){#introduction{padding:60px 7%}#introduction .question{font-size:40px}}
