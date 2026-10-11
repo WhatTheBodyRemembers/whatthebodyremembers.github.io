@@ -150,3 +150,11 @@ html{scroll-padding-top:0}
 .source-document h2{font-size:22px}.source-document h3{font-size:19px}.source-document h4,.source-document h5{font-size:16px}
 .source-document a{overflow-wrap:anywhere}
 .project-details{margin-top:18px}
+
+/* Separate source entries and categories as in the supplied bibliography. */
+.statement .work-credits .source-document{padding-top:14px;line-height:1.5}
+.statement .work-credits .source-document p{margin:0 0 1em!important;line-height:1.5!important;text-indent:0!important}
+.statement .work-credits .source-document h2,.statement .work-credits .source-document h3,.statement .work-credits .source-document h4,.statement .work-credits .source-document h5{font:700 16px/1.5 Arial,Helvetica,sans-serif;margin:26px 0 16px!important}
+.statement .work-credits .source-document>:first-child{margin-top:0!important}
+.statement .work-credits .source-document ol{padding-left:26px;margin:12px 0 24px;line-height:1.5}
+.statement .work-credits .source-document li{padding-left:3px;margin:0}
