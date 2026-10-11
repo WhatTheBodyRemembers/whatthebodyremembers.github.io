@@ -124,3 +124,6 @@ Object.assign(window.EXHIBITION.works.find(w=>w.id==="burnout-in-medicine"),{"sh
 
 // Remove display positions 10–13 at the curator's request.
 window.EXHIBITION.photographs = window.EXHIBITION.photographs.slice(0, 9);
+
+window.EXHIBITION.works.find(w=>w.id==='burnout-in-medicine').previewSrc='lea-preview.mp4';
+window.EXHIBITION.works.find(w=>w.id==='doctors-on-the-frontline').previewSrc='rayan-preview-sound.mp4';
