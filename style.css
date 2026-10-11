@@ -134,3 +134,11 @@ html{scroll-padding-top:0}
 .statement .document-bibliography{min-width:0;max-width:100%;overflow-wrap:anywhere}
 .statement .document-bibliography p{border:0;background:transparent;padding:0;max-width:none;font-size:15px;box-shadow:none}
 .statement .document-bibliography a{overflow-wrap:anywhere}
+
+/* One consistent credits presentation across film and podcast works. */
+.statement .work-credits .document-bibliography{font:15px/1.65 Arial,Helvetica,sans-serif;padding-top:12px}
+.statement .work-credits .document-bibliography p{margin:0!important;text-indent:0!important;padding:0;border:0;background:none;line-height:1.65!important;min-height:0!important;white-space:pre-line;font-size:15px;text-align:left}
+.statement .work-credits .document-bibliography .credit-spacer{height:14px}
+.statement .work-credits .document-bibliography .credit-heading{font-weight:600;margin-top:24px!important;margin-bottom:10px!important}
+.statement .work-credits .document-bibliography .credit-heading:first-child{margin-top:0!important}
+.statement .work-credits summary{font-size:16px;line-height:1.5}
