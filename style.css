@@ -129,3 +129,8 @@ html{scroll-padding-top:0}
 @media(max-width:700px){#photographs{padding:55px 7%}.flashbulb-opening{display:block;margin-bottom:60px}.flashbulb-title{margin-bottom:45px}.flashbulb-title h2{font-size:55px;max-width:none}.movement-grid{grid-template-columns:1fr;gap:50px}.photo-movement{margin-top:55px}.movement-heading{margin-bottom:26px}.flashbulb-statement p{font-size:17px}.photo-plate h4{font-size:26px}}
 
 @media(min-width:701px){.photo-movement,.flashbulb-statement{scroll-margin-top:200px}}
+
+/* Bibliography paragraphs must not inherit artist-statement panels. */
+.statement .document-bibliography{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.statement .document-bibliography p{border:0;background:transparent;padding:0;max-width:none;font-size:15px;box-shadow:none}
+.statement .document-bibliography a{overflow-wrap:anywhere}
