@@ -48,9 +48,9 @@ document.querySelectorAll('.podcast').forEach(el=>{
 function followHash(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}if(D.themes.some(t=>t.id===id))id='introduction';if(id==='all-photographs'||D.photographs.some(p=>p.id===id))archive.hidden=false;const target=document.getElementById(id);if(!target)return;target.scrollIntoView({behavior:'instant',block:'start'});target.focus({preventScroll:true});const w=items.find(w=>w.id===id);document.title=w?`${w.title} — What the Body Remembers`:`${D.title} — Digital exhibition`;}
 window.addEventListener('hashchange',followHash);
 if(location.hash)requestAnimationFrame(followHash);
-const chapterFor=id=>{const w=items.find(w=>w.id===id);return w?(w.type==='film'?'films':w.type==='podcast'?'podcasts':'photographs'):id;};
+const chapterFor=id=>{if(id.startsWith('movement-')||id==='flashbulb-statement')return 'photographs';const w=items.find(w=>w.id===id);return w?(w.type==='film'?'films':w.type==='podcast'?'podcasts':'photographs'):id;};
 const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);if(!visible.length)return;const chapter=chapterFor(visible[0].target.id);document.querySelectorAll('header nav a').forEach(a=>{if(a.hash==='#'+chapter)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});},{rootMargin:'-18% 0px -65% 0px'});
-document.querySelectorAll('.scroll-section').forEach(el=>observer.observe(el));
+document.querySelectorAll('.scroll-section,.photo-movement,.flashbulb-statement').forEach(el=>observer.observe(el));
 
 document.addEventListener('click',e=>{if(e.target.closest('[data-close-archive]'))archive.hidden=true;const a=e.target.closest('a[href^="#"]');if(a&&a.hash===location.hash)requestAnimationFrame(followHash);});
 
