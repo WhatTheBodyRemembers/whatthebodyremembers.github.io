@@ -142,3 +142,11 @@ html{scroll-padding-top:0}
 .statement .work-credits .document-bibliography .credit-heading{font-weight:600;margin-top:24px!important;margin-bottom:10px!important}
 .statement .work-credits .document-bibliography .credit-heading:first-child{margin-top:0!important}
 .statement .work-credits summary{font-size:16px;line-height:1.5}
+
+/* Isolate faithful Word content from the artist-statement panel styling. */
+.source-document{min-width:0;max-width:100%;font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+.statement .source-document p,.source-document p{border:0;background:none;padding:0;max-width:none;box-shadow:none;font-size:inherit}
+.source-document h2,.source-document h3,.source-document h4,.source-document h5{font-family:inherit;line-height:1.4;letter-spacing:normal;text-transform:none;color:inherit}
+.source-document h2{font-size:22px}.source-document h3{font-size:19px}.source-document h4,.source-document h5{font-size:16px}
+.source-document a{overflow-wrap:anywhere}
+.project-details{margin-top:18px}
