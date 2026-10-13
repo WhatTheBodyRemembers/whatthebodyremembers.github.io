@@ -158,3 +158,5 @@ html{scroll-padding-top:0}
 .statement .work-credits .source-document>:first-child{margin-top:0!important}
 .statement .work-credits .source-document ol{padding-left:26px;margin:12px 0 24px;line-height:1.5}
 .statement .work-credits .source-document li{padding-left:3px;margin:0}
+
+.site-copyright{padding:26px 7%;background:#101310;color:#c7c4ba;border-top:1px solid #383a35;text-align:center;font:13px/1.7 Arial,Helvetica,sans-serif}
